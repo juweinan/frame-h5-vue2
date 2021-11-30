@@ -1,26 +1,21 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" @click="getPersonName" />
-    <HelloWorld
-      msg="Welcome to Your Vue.js + TypeScript App"
-      title="Welcome to Your Vue.js + TypeScript AppWelcome to Your Vue.js + TypeScript AppWelcome to Your Vue.js + TypeScript App"
-    />
+    <div class="tip">
+      <span class="tip-info">2021.12.25 法律知识库已更新3篇法律</span>
+      <span class="tip-detail">详情</span>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 
-import HelloWorld from '@/components/HelloWorld.vue';
-// @ is an alias to /src
 interface Person {
   name: string;
   age?: number;
 }
 @Component({
-  components: {
-    HelloWorld,
-  },
+  components: {},
 })
 export default class Home extends Vue {
   private person: Person | null = null;
@@ -36,10 +31,27 @@ export default class Home extends Vue {
 .home {
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
-  padding: 10px;
-  margin: 10px;
-  font-size: 12px;
-  color: #000;
+  height: 100vh;
+  background: #f5f5f5;
+
+  .tip {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 750px;
+    height: 57px;
+    padding: 0 30px;
+    font-size: 26px;
+    background: rgba(253, 227, 227, 0.7);
+
+    &-info {
+      color: #666;
+    }
+
+    &-detail {
+      color: #aa1f1f;
+    }
+  }
 }
 </style>
