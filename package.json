@@ -37,6 +37,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
+    "postcss-px-to-viewport": "^1.1.1",
     "postcss-pxtorem": "^5.1.1",
     "prettier": "^2.5.0",
     "stylelint": "^13.13.1",
