@@ -1,6 +1,7 @@
 // https://cli.vuejs.org/zh/config/
 const { resolve } = require('path');
 
+const IS_DEV = process.env.NODE_ENV === 'development';
 const IS_PROD = process.env.NODE_ENV === 'production';
 
 const useGlobalStyle = (rule) => {
@@ -55,5 +56,33 @@ module.exports = {
         include: 'initial',
       },
     ]);
+
+    // 用于将依赖包分开打包，暂时不知道原理
+    config.when(!IS_DEV, (config) => {
+      config.optimization.splitChunks({
+        chunks: 'all',
+        cacheGroups: {
+          libs: {
+            name: 'chunk-libs',
+            test: /[\\/]node_modules[\\/]/,
+            priority: 10,
+            chunks: 'initial',
+          },
+          vantUI: {
+            name: 'chunk-vantUI',
+            priority: 20,
+            test: /[\\/]node_modules[\\/]_?element-ui(.*)/,
+          },
+          commons: {
+            name: 'chunk-commons',
+            test: resolve(__dirname, 'src/components'),
+            minChunks: 3,
+            priority: 5,
+            reuseExistingChunk: true,
+          },
+        },
+      });
+      config.optimization.runtimeChunk('single');
+    });
   },
 };
