@@ -10,6 +10,8 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 
+import { testRequest } from '@/api/test';
+
 interface Person {
   name: string;
   age?: number;
@@ -23,6 +25,18 @@ export default class Home extends Vue {
 
   private getPersonName() {
     console.log(this.person?.name || '12313');
+  }
+
+  private created() {
+    this.testRequest();
+  }
+
+  private async testRequest() {
+    try {
+      await testRequest({ name: 'wdx' });
+    } catch (error) {
+      console.log(error);
+    }
   }
 }
 </script>
