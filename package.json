@@ -5,6 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:release": "vue-cli-service build --mode release",
+    "build:production": "vue-cli-service build --mode production",
     "lint": "vue-cli-service lint",
     "lint:eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,tsx}\" --fix",
     "lint:prettier": "prettier --write --loglevel warn \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
@@ -43,6 +45,7 @@
     "postcss-px-to-viewport": "^1.1.1",
     "postcss-pxtorem": "^5.1.1",
     "prettier": "^2.5.0",
+    "style-resources-loader": "^1.4.1",
     "stylelint": "^13.13.1",
     "stylelint-config-html": "^1.0.0",
     "stylelint-config-prettier": "^8.0.2",

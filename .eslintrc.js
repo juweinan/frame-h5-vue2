@@ -29,6 +29,8 @@ module.exports = {
     // 禁止使用 @ts-ignore 注释
     '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    // 允许使用 require 导入方式
+    '@typescript-eslint/no-var-requires': 'off',
     // 自动排序 import/exports 导入导出
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',

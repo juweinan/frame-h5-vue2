@@ -6,6 +6,14 @@
     </div>
 
     <van-button type="primary">主要按钮</van-button>
+
+    <p class="less-detail">
+      因为 Less 和 CSS 非常像，因此很容易学习。而且 Less 仅对 CSS 语言增加了少许方便的扩展，这就是
+      Less 如此易学的原因之一。
+    </p>
+
+    <img src="@assets/images/test.png" alt="" />
+    <img src="@assets/images/test1.png" alt="" />
   </div>
 </template>
 
@@ -69,6 +77,10 @@ export default class Home extends Vue {
     &-detail {
       color: #aa1f1f;
     }
+  }
+
+  .less-detail {
+    color: @yellow;
   }
 }
 </style>
