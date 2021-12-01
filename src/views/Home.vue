@@ -4,6 +4,8 @@
       <span class="tip-info">2021.12.25 法律知识库已更新3篇法律</span>
       <span class="tip-detail">详情</span>
     </div>
+
+    <van-button type="primary">主要按钮</van-button>
   </div>
 </template>
 
@@ -56,6 +58,7 @@ export default class Home extends Vue {
     width: 750px;
     height: 57px;
     padding: 0 30px;
+    margin-bottom: 20px;
     font-size: 26px;
     background: rgba(253, 227, 227, 0.7);
 
