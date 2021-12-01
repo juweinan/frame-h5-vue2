@@ -1,5 +1,6 @@
 // https://cli.vuejs.org/zh/config/
 const { resolve } = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
 
 const IS_DEV = process.env.NODE_ENV === 'development';
 const IS_PROD = process.env.NODE_ENV === 'production';
@@ -33,6 +34,29 @@ module.exports = {
         },
       },
     },
+  },
+
+  configureWebpack: () => {
+    // 默认只有生产环境才会清除 console 语句和 debugger 语句（暂时不知道有没有生效）
+    return {
+      plugins: [
+        // 移除 console.log 和 debugger 的代码
+        new TerserPlugin({
+          sourceMap: false,
+          parallel: true,
+          terserOptions: {
+            ecma: undefined,
+            warnings: false,
+            parse: {},
+            compress: {
+              drop_console: true, // 清除 console 语句
+              drop_debugger: false, // 清除 debugger 语句
+              pure_funcs: ['console.log'], // 移除 console
+            },
+          },
+        }),
+      ],
+    };
   },
 
   chainWebpack: (config) => {
