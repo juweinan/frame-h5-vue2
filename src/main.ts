@@ -9,6 +9,8 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 
+console.log('23423423');
+
 Vue.config.productionTip = false;
 
 new Vue({
