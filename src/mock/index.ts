@@ -11,3 +11,5 @@ console.log('hello githooks', sum);
 console.log('hello githooks', sum2);
 
 console.log('husky install  success');
+
+console.log('test auto run husky install command');
