@@ -10,4 +10,4 @@ console.log('hello githooks', sum);
 
 console.log('hello githooks', sum2);
 
-console.log('add.vscode will success');
+console.log('husky install');
