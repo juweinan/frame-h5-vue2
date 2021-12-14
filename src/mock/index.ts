@@ -4,4 +4,4 @@ function add(a: number, b: number) {
 
 const sum: number = add(1, 3);
 
-console.log('hello githooks', sum);
+console.log('hello githooksaaaa', sum);
