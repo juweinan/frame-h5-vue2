@@ -10,4 +10,4 @@ console.log('hello githooks', sum);
 
 console.log('hello githooks', sum2);
 
-console.log('husky install');
+console.log('husky install  success');
