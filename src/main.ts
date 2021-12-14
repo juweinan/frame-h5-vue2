@@ -2,21 +2,13 @@
 import 'amfe-flexible';
 import './assets/style/reset.less';
 import './utils/useVant';
+import './mock/index';
 
 import Vue from 'vue';
 
 import App from './App.vue';
 import router from './router';
 import store from './store';
-
-console.log('23423423');
-console.log('23423423');
-
-console.log('23423423');
-
-console.log('23423423');
-
-console.log('23423423');
 
 Vue.config.productionTip = false;
 
