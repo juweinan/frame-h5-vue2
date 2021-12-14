@@ -1,7 +1,7 @@
-function add(a, b) {
+function add(a: number, b: number) {
   return a + b;
 }
 
-const sum = add(1, 3);
+const sum: number = add(1, 3);
 
-console.log('hello githooks');
+console.log('hello githooks', sum);
