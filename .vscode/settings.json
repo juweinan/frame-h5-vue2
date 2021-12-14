@@ -1,0 +1,34 @@
+{
+  "editor.formatOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
+    "source.fixAll.markdownlint": true
+  },
+  "stylelint.enable": true,
+  "stylelint.autoFixOnSave": true,
+  "files.eol": "\n",
+  "prettier.configPath": ".prettierrc.js",
+  "stylelint.snippet": [
+    "css",
+    "less",
+    "postcss",
+    "vue",
+    "scss"
+  ],
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "vue",
+    "scss"
+  ]
+}

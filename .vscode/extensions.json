@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "tabnine.tabnine-vscode",
+    "eamodio.gitlens",
+    "qiu8310.minapp-vscode",
+    "sdras.vue-vscode-snippets", // vue代码片段
+    "octref.vetur"
+  ]
+}
