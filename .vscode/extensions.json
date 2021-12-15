@@ -3,6 +3,7 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "tabnine.tabnine-vscode",
+    "stylelint.vscode-stylelint",
     "eamodio.gitlens",
     "qiu8310.minapp-vscode",
     "sdras.vue-vscode-snippets", // vue代码片段
