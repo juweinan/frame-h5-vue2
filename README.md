@@ -18,10 +18,11 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
+### Git commit
 
 ```
-npm run lint
+git add .
+npm run commit
 ```
 
 ### Customize configuration
