@@ -1,30 +1,13 @@
-# vue-h5-project
+## h5-project
 
-## Project setup
+基于 
 
-```
-npm install
-```
+- `vue2`
+- `typescript`
+- `webpack`
+- `eslint`
+- `prettier`
+- `stylelint`
+- `git-cz` 
 
-### Compiles and hot-reloads for development
-
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Git commit
-
-```
-git add .
-npm run commit
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+搭建的 `h5` 端的脚手架
